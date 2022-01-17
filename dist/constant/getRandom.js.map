@@ -1,0 +1,1 @@
+{"version":3,"file":"getRandom.js","sourceRoot":"","sources":["../../src/constant/getRandom.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,IAAM,SAAS,GAAG,UAAC,MAAc;IACpC,IAAM,QAAQ,GAAG,IAAI,CAAC,KAAK,CAAC,IAAI,CAAC,MAAM,EAAE,GAAG,MAAM,CAAC,CAAC;IACpD,OAAO,QAAQ,CAAA;AACnB,CAAC,CAAA"}

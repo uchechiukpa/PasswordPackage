@@ -34,5 +34,4 @@ export var passwordGenerator = function (max) {
     }
     return password;
 };
-passwordGenerator(6);
 //# sourceMappingURL=passwordgenerator.js.map

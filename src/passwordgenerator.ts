@@ -34,5 +34,4 @@ export const passwordGenerator = (max: number = 10)=> {
 
 }
 
-passwordGenerator(6)
 

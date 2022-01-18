@@ -43,8 +43,6 @@ export const  passwordChecker = ( passwordOptions: passwordOptions,  password: s
 
     let returnValue = {}
 
-    console.log(smallLetter, reqLowerCase);
-    
     if(smallLetter < reqLowerCase )
         returnValue = {...returnValue, "smallLetter": false}
     else returnValue = {...returnValue, "smallLetter": true}
@@ -72,18 +70,3 @@ export const  passwordChecker = ( passwordOptions: passwordOptions,  password: s
 
 
 }
-
-// passwordChecker({
-//     smallLetter: 5,
-//     capitalLetter: 2,
-//     specialCharacter: 2,
-//     number: 3,
-//     length: 12
-// },"aDE45!*bcF6")
-// // passwordChecker({
-// //     smallLetter: 3,
-// //     capitalLetter: 2,
-// //     specialCharacter: 2,
-// //     number: 3,
-// //     length: 9
-// // }, "DE45!*bcF")

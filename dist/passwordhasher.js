@@ -1,7 +1,7 @@
 import { createHash } from "crypto";
 export var passwordHasher = function (password) {
     var hash = createHash('sha512');
-    hash.update('hello');
+    hash.update(password);
     return hash.digest('hex');
 };
 export var comparePassword = function (hashed, password) {

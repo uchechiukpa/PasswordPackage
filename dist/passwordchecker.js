@@ -41,7 +41,6 @@ export var passwordChecker = function (passwordOptions, password) {
     var _a = findpasswordLetter(password), smallLetter = _a.smallLetter, capitalLetter = _a.capitalLetter, number = _a.number, specialCharacter = _a.specialCharacter;
     var reqLowerCase = passwordOptions.smallLetter, reqCapitalCase = passwordOptions.capitalLetter, reqSpecialCharacter = passwordOptions.specialCharacter, reqNumber = passwordOptions.number, length = passwordOptions.length;
     var returnValue = {};
-    console.log(smallLetter, reqLowerCase);
     if (smallLetter < reqLowerCase)
         returnValue = __assign(__assign({}, returnValue), { "smallLetter": false });
     else
@@ -64,18 +63,4 @@ export var passwordChecker = function (passwordOptions, password) {
         returnValue = __assign(__assign({}, returnValue), { "length": true });
     return returnValue;
 };
-// passwordChecker({
-//     smallLetter: 5,
-//     capitalLetter: 2,
-//     specialCharacter: 2,
-//     number: 3,
-//     length: 12
-// },"aDE45!*bcF6")
-// // passwordChecker({
-// //     smallLetter: 3,
-// //     capitalLetter: 2,
-// //     specialCharacter: 2,
-// //     number: 3,
-// //     length: 9
-// // }, "DE45!*bcF")
 //# sourceMappingURL=passwordchecker.js.map

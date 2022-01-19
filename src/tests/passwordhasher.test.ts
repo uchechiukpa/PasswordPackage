@@ -4,9 +4,7 @@ test("hashing password meets constraints", () => {
     const password = "m8y09*Gik099Pt/"
 
     const hashedPassword = passwordHasher(password)
-    console.log(hashedPassword)
-
-    const hash = "9ec56e4d82c78c56395774dde7862a1a61ad6c153597a773d0c8581600572475a31dd9f24114461ede3111e6ad862c18048f435c43b21408b56d6a194b17123e"
+    const hash = "d4b77bd79123c3cded49004b77ffae9aaca4d585f4a91c35d45d6ffdc0adb858e1c15a44aae681a2d2c1d98be670f0ef7133d5b0aea432a7befc61bf68e46544"
 
     expect(hashedPassword.length).toBe(128)
     const comparedPassword = comparePassword(hash, password)

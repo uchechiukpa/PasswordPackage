@@ -1,4 +1,7 @@
 {
+  "name": "password-lite",
+  "version": "1.0.0",
+  "description": "A password package for generating, checking, hashing and comparing password",
   "type": "module",
   "scripts": {
     "test": "jest --watch --verbose dist",

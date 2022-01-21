@@ -1,6 +1,6 @@
-import { passwordChecker } from "./passwordchecker";
-import { passwordGenerator } from "./passwordgenerator";
-import { passwordHasher } from "./passwordhasher";
+export *  from "./passwordchecker";
+export *  from "./passwordgenerator";
+export *  from "./passwordhasher";
 
 
 

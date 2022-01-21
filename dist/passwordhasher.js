@@ -8,4 +8,4 @@ export var comparePassword = function (hashed, password) {
     var newPassword = passwordHasher(password);
     return hashed === newPassword;
 };
-//# sourceMappingURL=passwordhasher.js.map
+//# sourceMappingURL=passwordhasher.js.map  

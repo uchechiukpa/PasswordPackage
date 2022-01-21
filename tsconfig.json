@@ -5,7 +5,11 @@
         "sourceMap": true, 
         "allowJs": true, 
         "outDir": "dist",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "paths": {
+            "password-lite": ["./src"]
+        }
+
     },
     "exclude": [
         "node_modules", 

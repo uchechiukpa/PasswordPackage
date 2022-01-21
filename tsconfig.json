@@ -6,8 +6,9 @@
         "allowJs": true, 
         "outDir": "dist",
         "moduleResolution": "node",
+        "baseUrl": "./",
         "paths": {
-            "password-lite": ["./src"]
+            "password-lite": ["src/index.ts"]
         }
 
     },

@@ -4,7 +4,7 @@ import { shuffle } from "./constant/shuffle";
 
 
 
-export const passwordGenerator = (max: number = 10)=> {
+export function passwordGenerator (max: number = 10) {
     if(max < 9){
         return "password can't be less than 9"
     }

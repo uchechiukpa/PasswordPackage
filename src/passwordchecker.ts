@@ -37,7 +37,7 @@ interface passwordOptions {
     number: number,
     length: number
 }
-export const  passwordChecker = ( passwordOptions: passwordOptions,  password: string) => {
+export function passwordChecker ( passwordOptions: passwordOptions,  password: string){
     const {smallLetter, capitalLetter, number, specialCharacter}  =  findpasswordLetter(password)
     const {smallLetter: reqLowerCase, capitalLetter: reqCapitalCase, specialCharacter: reqSpecialCharacter, number: reqNumber, length} = passwordOptions
 

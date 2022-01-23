@@ -37,7 +37,7 @@ var findpasswordLetter = function (password) {
         nonPassword: nonPassword
     };
 };
-export var passwordChecker = function (passwordOptions, password) {
+export function passwordChecker(passwordOptions, password) {
     var _a = findpasswordLetter(password), smallLetter = _a.smallLetter, capitalLetter = _a.capitalLetter, number = _a.number, specialCharacter = _a.specialCharacter;
     var reqLowerCase = passwordOptions.smallLetter, reqCapitalCase = passwordOptions.capitalLetter, reqSpecialCharacter = passwordOptions.specialCharacter, reqNumber = passwordOptions.number, length = passwordOptions.length;
     var returnValue = {};
@@ -62,5 +62,5 @@ export var passwordChecker = function (passwordOptions, password) {
     else
         returnValue = __assign(__assign({}, returnValue), { "length": true });
     return returnValue;
-};
+}
 //# sourceMappingURL=passwordchecker.js.map

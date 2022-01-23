@@ -10,7 +10,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 import { getRandom } from "./constant/getRandom";
 import { smallLetters, capitalLetters, numbers, specialCharacters } from "./constant/passwordfeatures";
 import { shuffle } from "./constant/shuffle";
-export var passwordGenerator = function (max) {
+export function passwordGenerator(max) {
     if (max === void 0) { max = 10; }
     if (max < 9) {
         return "password can't be less than 9";
@@ -33,5 +33,5 @@ export var passwordGenerator = function (max) {
         password += combinedPasword[randomNumberUsed];
     }
     return password;
-};
+}
 //# sourceMappingURL=passwordgenerator.js.map

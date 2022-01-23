@@ -1,14 +1,19 @@
 {
   "name": "password-lite",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A password package for generating, checking, hashing and comparing password",
   "type": "module",
   "author": "Ukpa Uchechi",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist",
   "license": "MIT",
+  "keywords": ["password", "passwordChecker",
+     "password generator", "password hasher", 
+     "compare password", "password lite", "password package"],
   "scripts": {
     "test": "jest --watch --verbose dist",
-    "start": "tsc --w"
+    "start": "tsc --w",
+    "build": "tsc -p ."
   },
   "jest": {
     "transform": {
@@ -19,6 +24,7 @@
     "@babel/preset-env": "^7.16.8",
     "@types/jest": "^27.4.0",
     "babel-jest": "^27.4.6",
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "typescript": "^4.5.5"
   }
 }

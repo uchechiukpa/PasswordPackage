@@ -1,17 +1,23 @@
 {
     "compilerOptions": {
+        "lib": ["es5", "es6"],
         "module": "es2015",
         "target": "es5",
         "sourceMap": true, 
-        "allowJs": true, 
+        // "allowJs": true, 
         "outDir": "dist",
         "moduleResolution": "node",
         "baseUrl": "./",
-        "paths": {
-            "password-lite": ["src/index.ts"]
-        }
+        "declaration": true,
+        "declarationMap": true
+        // "paths": {
+        //     "password-lite": ["src/index.ts"]
+        // }
 
     },
+    "include": [
+        "src"
+    ],
     "exclude": [
         "node_modules", 
         "dist"
